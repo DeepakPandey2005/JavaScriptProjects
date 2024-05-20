@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+.container{
+height: 80vh;
+width: 78vw;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+    .game:hover{
+        background-color: rgb(240, 161, 240);
+    }
+.game{
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8vw;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.gamebox{
+    height: 60vh;
+    width: 40vw;
+    display:grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+}
+
+
+.btop{
+border-top: 0;
+}
+.bbottom{
+border-bottom: 0;
+}
+.bleft{
+border-left: 0;
+}
+.bright{
+border-right: 0;
+}
+p{
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    visibility:hidden;
+}
+
+#reset{
+    height: 8vh;
+    width: 14vw;
+    border-radius: 25px;
+    font-size: x-large;
+    position: absolute;
+    bottom: 5vw;
+    color: black;
+    background-color: greenyellow;
+    cursor: pointer;
+
+}
+#reset:hover{
+    background-color: red;
+    color: black;
+}
+h5{
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media only screen and (max-width:950px){
+    body{
+        max-width: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #reset{
+        height: 80px;
+        width: 150px;
+        position: absolute;
+        top: 60vh;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 20px;
+        margin: 20px;
+    }
+   .game-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+}
