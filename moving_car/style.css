@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+button{
+    height: 5vh;
+    width: 8vw;
+    background-color: rgb(73, 249, 73);
+    margin: 20px;
+    padding: 15px;
+    color: black;
+    position: fixed;
+    right: 5vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 4;
+    font-weight: 700;
+    border: 3px solid black;
+    border-radius: 10px;
+}button:hover{
+    background-color: red;
+    color: white;
+}
+
+.road{
+    position: absolute;
+    bottom: 0px;
+}
+
+.hills img{
+    height:77vh;
+    width: 280vw;
+    position: absolute;
+    z-index: 1;
+    border-image-repeat: repeat;
+    animation: skymove 29s linear  infinite  ;
+
+}
+
+
+.roads img{
+    height: 77vh;
+    width: 500vw;
+    position: absolute;
+    animation: carmove 8s linear  infinite  ;
+}
+
+.car img{
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 5vh;
+    left: 40vh;
+    z-index: 3;
+    height: 26vh;
+    width: 25vh;
+    animation: jump  linear 1.5s infinite;
+}
+.wheel1 img{
+    height: 6vh;
+    width:  6vh;
+    position: absolute;
+    bottom: 12vh;
+    left: 43vh;
+    animation: rotate  linear 0.5s infinite ;
+
+}
+.wheel2 img{
+    height: 6vh;
+    width:  6vh;
+    position: absolute;
+    left: 58vh;
+    bottom: 12vh;
+    animation: rotate linear 0.5s infinite ;
+
+}
+
+@keyframes rotate {
+    100%{transform: rotate(360deg);}
+}
+@keyframes jump {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-4px);}
+    100%{transform: translateY(5px);}
+}
+
+@keyframes carmove {
+    100%{transform: translate(-290vw);}
+    
+}
+
+@keyframes skymove {
+    100%{transform: translate(-120vw);}
+    
+}
